@@ -23,100 +23,96 @@
 </head>
 
 <body>
-    <section class="fullwidth">
-        <div class=" container top-info">
-            <div class="info-item info-item__phone">
-                    <a class="top-link info-item__phone-link" href="tel:+375290000000">
-                        <svg class="phone">
-                            <use xlink:href="img/sprite.svg#top-phone"></use>
+    <section class="header">
+        <div class=" fullwidth">
+            <div class=" container top-info">
+                <div class="top-info__item top-info__item--phone">
+                        <a class="top-info__item--link" href="tel:+375290000000">
+                            <svg class="phone">
+                                <use xlink:href="img/sprite.svg#top-phone"></use>
+                            </svg>
+                            <span>+375 29 00-00-00</span>
+                        </a>
+                </div>
+                <div class="top-info__item top-info__item--address">
+                        <a class="top-info__item--link" href="mailto:info@stranamasterov.by">
+                            <svg class="email">
+                                <use xlink:href="img/sprite.svg#email"></use>
+                            </svg>
+                            <span>info@stranamasterov.by</span>
+                        </a>
+                </div>
+                <div class="top-info__item top-info__item--social">
+                    <ul class="social-list">
+                        <li class="social-list__item">
+                            <a class="social-list__item--link" href="https://www.instagram.com/stranamasterov.by/" target="_blank" aria-label="Ссылка на инстаграм">
+                                <svg class="instagram">
+                                    <use xlink:href="img/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="top-info__item top-info__item--time">
+                        <svg class="time">
+                            <use xlink:href="img/sprite.svg#clock"></use>
                         </svg>
-                        <span>+375 29 00-00-00</span>
-                    </a>
-            </div>
-            <div class="info-item info-item__address">
-                    <img class="info-item__address-img" src="img/email.svg" alt="">
-                    <span>info@stranamasterov.by</span>
-            </div>
-            <div class="info-item info-item__social">
-                <ul class="info-item__social-list">
-                    <li class="info-item__social-item">
-                        <a class="info-item__social-link" href="#"><img class="info-item__social-img" src="img/instagram.svg" alt=""></a>
-                    </li>
-                    <li class="info-item__social-item">
-                        <a class="info-item__social-link" href="#"><img class="info-item__social-img" src="img/facebook.svg" alt=""></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="info-item info-item__time">
-                    <svg class="time">
-                        <use xlink:href="img/sprite.svg#clock"></use>
-                    </svg>
-                    <span>Пн.-Пт. 9.00-17.00</span>
+                        <span>Пн.-Пт. 9.00-17.00</span>
+                </div>
             </div>
         </div>
+
+        <nav class="container nav">
+            <div class="nav__desktop">
+                <a href="index.html" class="site-logo"><img class="logo" src="img/logo.png" alt="Логотип Страны Мастеров"></a>
+                <form class="top-search">
+                    <input class="button button-white top-search-input" type="text" placeholder="Поиск">
+                    <button class="top-search-button" type="submit"></button>
+                    <button class="top-search-button-reset" type="reset"></button>
+                </form>
+                <ul class="icon-menu">
+                    <li class="icon-menu__item">
+                        <a class="icon-menu__item--link" href="#">
+                            <svg class="fav">
+                                <use xlink:href="img/sprite.svg#fav"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icon-menu__list_item">
+                        <a class="icon-menu__list_item-link" href="#">
+                            <svg class="cart">
+                                <use xlink:href="img/sprite.svg#cart"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icon-menu__list_item">
+                        <a class="icon-menu__list_item-link" href="#">
+                            <svg class="person">
+                                <use xlink:href="img/sprite.svg#person"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </div>
+            </div>    
+            <ul class="top-menu">
+                <li class="top-menu__item">
+                    <a class="top-menu__link top-menu__link--current">Главная</a>
+                </li>
+                <li class="top-menu__item">
+                    <a href="#" class="top-menu__link">Каталог</a>
+                </li>
+                <li class="top-menu__item">
+                    <a href="#" class="top-menu__link">О нас</a>
+                </li>
+                <li class="top-menu__item">
+                    <a href="#" class="top-menu__link">Контакты</a>
+                </li>
+            </ul>  
+
+        </nav>
     </section>
 
-    <nav class="container navigation">
-        <div class="top-menu-desktop">
-            <a href="#" class="site-logo"><img class="logo" src="img/logo.png" alt="Логотип Страны Мастеров"></a>
-            <form class="top-search">
-                <input class="button button-white top-search-input" type="text" placeholder="Поиск">
-                <button class="top-search-button" type="submit"></button>
-                <button class="top-search-button-reset" type="reset"></button>
-            </form>
-            <div class="icon-menu">
-                <ul class="icon-menu__list">
-                    <li class="icon-menu__list_item">
-                        <a class="icon-menu__list_item-link" href="#"><img class="icon-menu__list_item-img" src="img/favourite.svg" alt=""></a>
-                    </li>
-                    <li class="icon-menu__list_item">
-                        <a class="icon-menu__list_item-link" href="#"><img class="icon-menu__list_item-img" src="img/cart.svg" alt=""></a>
-                    </li>
-                    <li class="icon-menu__list_item">
-                        <a class="icon-menu__list_item-link" href="#"><img class="icon-menu__list_item-img" src="img/person.svg" alt=""></a>
-                    </li>
-                </ul>
-            </div>
-            
-<!--             <ul class="top-menu-items">
-                <li class="top-menu-item">
-                    <a href="#" class="top-menu-link">Каталог</a>
-                </li>
-                <li class="top-menu-item">
-                    <a href="#" class="top-menu-link">О нас</a>
-                </li>
-                <li class="top-menu-item">
-                    <a href="#" class="top-menu-link">Контакты</a>
-                </li>
-            </ul> 
-            <div class="top-menu-buttons">
-                <button class="button button-white button-search">
-                    <svg class="search-logo">
-                        <use xlink:href="img/sprite.svg#search"></use>
-                    </svg>
-                    <span>Поиск</span>
-                </button>
-                <button class="button button-white button-enter">
-                    <svg class="enter-logo">
-                        <use xlink:href="img/sprite.svg#enter"></use>
-                    </svg>
-                    <span>Войти</span>
-                </button>
-                <button class="button button-white button-favorit">
-                    <svg class="favorit-logo">
-                        <use xlink:href="img/sprite.svg#fav"></use>
-                    </svg>
-                    <span>Избранное</span>
-                </button>
-                <button class="button button-white button-cart">
-                    <svg class="cart-logo">
-                        <use xlink:href="img/sprite.svg#cart"></use>
-                    </svg>
-                    <span>Корзина</span>
-                </button>
-            </div>-->
-        </div>
-    </nav>
     <div class="container breadcrumbs">
         <ul class="breadcrumbs__items">
             <li class="breadcrumbs__item">
@@ -230,10 +226,6 @@
 
 
     </main>
-    <div id="container">
-        <div class="el">ONE</div>
-        <div class="el">TWO</div>
-        <div class="el">THREE</div>
-    </div>
+
 </body>
 </html>

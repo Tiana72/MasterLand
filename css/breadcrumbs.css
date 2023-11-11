@@ -1,0 +1,20 @@
+/* Крошки */
+
+.breadcrumbs {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.breadcrumbs__items {
+    display: flex;
+    font-size: 14px;
+}
+.breadcrumbs__item:not(:last-child) {
+    margin-right: 5px;
+}
+.breadcrumbs__item:not(:last-child)::after {
+    content: '';
+    display: inline-block;
+    width: 17px;
+    height: 9px;
+    background-image: url(../img/arrow.svg);
+}
