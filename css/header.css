@@ -179,9 +179,23 @@
     width: 14px;
     height: 15px;
 }
+.icon-menu__list_item-link {
+    position: relative;
+}
 .cart {
     width: 11px;
     height: 15px;
+}
+.cart-qty {
+    position: absolute;
+    background-color: var(--lightbackground);
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    top: -7px;
+    right: -7px;
+    font-size: 10px;
+    text-align: center;
 }
 .person {
     width: 16px;

@@ -24,7 +24,7 @@
 
 <body>
     <section class="header">
-        <div class=" fullwidth">
+        <div class=" fullwidth top-bar">
             <div class=" container top-info">
                 <div class="top-info__item top-info__item--phone">
                         <a class="top-info__item--link" href="tel:+375290000000">
@@ -73,21 +73,22 @@
                 </form>
                 <ul class="icon-menu">
                     <li class="icon-menu__item">
-                        <a class="icon-menu__item--link" href="#">
+                        <a class="icon-menu__item--link" href="#" aria-label="Favourite">
                             <svg class="fav">
                                 <use xlink:href="img/sprite.svg#fav"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="icon-menu__list_item">
-                        <a class="icon-menu__list_item-link" href="#">
+                        <a class="icon-menu__list_item-link" href="#" aria-label="Cart">
                             <svg class="cart">
                                 <use xlink:href="img/sprite.svg#cart"></use>
                             </svg>
+                            <span class="cart-qty">5</span>
                         </a>
                     </li>
                     <li class="icon-menu__list_item">
-                        <a class="icon-menu__list_item-link" href="#">
+                        <a class="icon-menu__list_item-link" href="#" aria-label="Personal area">
                             <svg class="person">
                                 <use xlink:href="img/sprite.svg#person"></use>
                             </svg>
@@ -129,17 +130,40 @@
 
     <main class="container main">
         <aside class="left-column">
-            &nbsp;
+            &nbsp; 
         </aside>
-        <div class="catalog">
-            <div class="catalog-item">
+        <section class="catalog">
+            <div class="catalog-item catalog-item--new">
                 <div class="catalog-item__icons">
                     <button class="catalog-item__icon"><img class="catalog-item__icon-image" src="img/heart-o.svg" alt=""></button>
                     <button class="catalog-item__icon"><img class="catalog-item__icon-image" src="img/addit.svg" alt=""></button>
                 </div>
-                <div class="catalog-image"></div>
-                <a class="catalog-item__name" href="#">Шпагат Macrametr 4&nbsp;мм, 100&nbsp;нитей</a>
-                <p class="catalog-item__price">34 p.</p>
+                <div class="catalog-image">
+                    <img class="catalog-image--img" src="img/image01.jpg" alt="Шпагат Macrametr">
+                </div>
+                <h4 class="catalog-item__name"><a class="catalog-item__link" href="#">Шпагат Macrametr 4&nbsp;мм, 100&nbsp;нитей</a></h4>
+                <span class="catalog-item__price">332
+                    <span class="catalog-item__price--val">p.</span>
+                </span>
+                <button class="button button-white catalog-item__price_button">Заказать</button>
+            </div>
+            <div class="catalog-item catalog-item--action">
+                <div class="catalog-item__icons">
+                    <button class="catalog-item__icon"><img class="catalog-item__icon-image" src="img/heart-o.svg" alt=""></button>
+                    <button class="catalog-item__icon"><img class="catalog-item__icon-image" src="img/addit.svg" alt=""></button>
+                </div>
+                <div class="catalog-image">
+                    <img class="catalog-image--img" src="img/image02.jpg" alt="Шпагат джутовый Сибшнур 500 м">
+                </div>
+                <h4 class="catalog-item__name"><a class="catalog-item__link" href="#">Шпагат Macrametr 4&nbsp;мм, 100&nbsp;нитей</a></h4>
+                <span class="catalog-item__price">
+                    <span class="catalog-item__price--old">332
+                        <span class="catalog-item__price--val">p.</span>
+                    </span>
+                    <span class="catalog-item__price--new">312
+                        <span class="catalog-item__price--val">p.</span>
+                    </span>
+                </span>
                 <button class="button button-white catalog-item__price_button">Заказать</button>
             </div>
             <div class="catalog-item">
@@ -147,9 +171,13 @@
                     <button class="catalog-item__icon"><img class="catalog-item__icon-image" src="img/heart-o.svg" alt=""></button>
                     <button class="catalog-item__icon"><img class="catalog-item__icon-image" src="img/addit.svg" alt=""></button>
                 </div>
-                <div class="catalog-image"></div>
-                <a class="catalog-item__name" href="#">Шпагат Macrametr 4&nbsp;мм, 100&nbsp;нитей</a>
-                <p class="catalog-item__price">34 p.</p>
+                <div class="catalog-image">
+                    <img class="catalog-image--img" src="img/image15.png" alt="Шпагат джутовый Сибшнур 500 м">
+                </div>
+                <h4 class="catalog-item__name"><a class="catalog-item__link" href="#">Шпагат Macrametr 4&nbsp;мм, 100&nbsp;нитей</a></h4>
+                <span class="catalog-item__price">332
+                    <span class="catalog-item__price--val">p.</span>
+                </span>
                 <button class="button button-white catalog-item__price_button">Заказать</button>
             </div>
             <div class="catalog-item">
@@ -157,9 +185,13 @@
                     <button class="catalog-item__icon"><img class="catalog-item__icon-image" src="img/heart-o.svg" alt=""></button>
                     <button class="catalog-item__icon"><img class="catalog-item__icon-image" src="img/addit.svg" alt=""></button>
                 </div>
-                <div class="catalog-image"></div>
-                <a class="catalog-item__name" href="#">Шпагат Macrametr 4&nbsp;мм, 100&nbsp;нитей</a>
-                <p class="catalog-item__price">34 p.</p>
+                <div class="catalog-image">
+                    <img class="catalog-image--img" src="img/image12.png" alt="Шпагат джутовый Сибшнур 500 м">
+                </div>
+                <h4 class="catalog-item__name"><a class="catalog-item__link" href="#">Шпагат Macrametr 4&nbsp;мм, 100&nbsp;нитей</a></h4>
+                <span class="catalog-item__price">332
+                    <span class="catalog-item__price--val">p.</span>
+                </span>
                 <button class="button button-white catalog-item__price_button">Заказать</button>
             </div>
             <div class="catalog-item">
@@ -167,9 +199,13 @@
                     <button class="catalog-item__icon"><img class="catalog-item__icon-image" src="img/heart-o.svg" alt=""></button>
                     <button class="catalog-item__icon"><img class="catalog-item__icon-image" src="img/addit.svg" alt=""></button>
                 </div>
-                <div class="catalog-image"></div>
-                <a class="catalog-item__name" href="#">Шпагат Macrametr 4&nbsp;мм, 100&nbsp;нитей</a>
-                <p class="catalog-item__price">34 p.</p>
+                <div class="catalog-image">
+                    <img class="catalog-image--img" src="img/image13.png" alt="Шпагат джутовый Сибшнур 500 м">
+                </div>
+                <h4 class="catalog-item__name"><a class="catalog-item__link" href="#">Шпагат Macrametr 4&nbsp;мм, 100&nbsp;нитей</a></h4>
+                <span class="catalog-item__price">332
+                    <span class="catalog-item__price--val">p.</span>
+                </span>
                 <button class="button button-white catalog-item__price_button">Заказать</button>
             </div>
             <div class="catalog-item">
@@ -177,9 +213,13 @@
                     <button class="catalog-item__icon"><img class="catalog-item__icon-image" src="img/heart-o.svg" alt=""></button>
                     <button class="catalog-item__icon"><img class="catalog-item__icon-image" src="img/addit.svg" alt=""></button>
                 </div>
-                <div class="catalog-image"></div>
-                <a class="catalog-item__name" href="#">Шпагат Macrametr 4&nbsp;мм, 100&nbsp;нитей</a>
-                <p class="catalog-item__price">34 p.</p>
+                <div class="catalog-image">
+                    <img class="catalog-image--img" src="img/image16.png" alt="Шпагат джутовый Сибшнур 500 м">
+                </div>
+                <h4 class="catalog-item__name"><a class="catalog-item__link" href="#">Шпагат Macrametr 4&nbsp;мм, 100&nbsp;нитей</a></h4>
+                <span class="catalog-item__price">332
+                    <span class="catalog-item__price--val">p.</span>
+                </span>
                 <button class="button button-white catalog-item__price_button">Заказать</button>
             </div>
             <div class="catalog-item">
@@ -187,9 +227,13 @@
                     <button class="catalog-item__icon"><img class="catalog-item__icon-image" src="img/heart-o.svg" alt=""></button>
                     <button class="catalog-item__icon"><img class="catalog-item__icon-image" src="img/addit.svg" alt=""></button>
                 </div>
-                <div class="catalog-image"></div>
-                <a class="catalog-item__name" href="#">Шпагат Macrametr 4&nbsp;мм, 100&nbsp;нитей</a>
-                <p class="catalog-item__price">34 p.</p>
+                <div class="catalog-image">
+                    <img class="catalog-image--img" src="img/image14.png" alt="Шпагат джутовый Сибшнур 500 м">
+                </div>
+                <h4 class="catalog-item__name"><a class="catalog-item__link" href="#">Шпагат Macrametr 4&nbsp;мм, 100&nbsp;нитей</a></h4>
+                <span class="catalog-item__price">332
+                    <span class="catalog-item__price--val">p.</span>
+                </span>
                 <button class="button button-white catalog-item__price_button">Заказать</button>
             </div>
             <div class="catalog-item">
@@ -197,9 +241,13 @@
                     <button class="catalog-item__icon"><img class="catalog-item__icon-image" src="img/heart-o.svg" alt=""></button>
                     <button class="catalog-item__icon"><img class="catalog-item__icon-image" src="img/addit.svg" alt=""></button>
                 </div>
-                <div class="catalog-image"></div>
-                <a class="catalog-item__name" href="#">Шпагат Macrametr 4&nbsp;мм, 100&nbsp;нитей</a>
-                <p class="catalog-item__price">34 p.</p>
+                <div class="catalog-image">
+                    <img class="catalog-image--img" src="img/image14.png" alt="Шпагат джутовый Сибшнур 500 м">
+                </div>
+                <h4 class="catalog-item__name"><a class="catalog-item__link" href="#">Шпагат Macrametr 4&nbsp;мм, 100&nbsp;нитей</a></h4>
+                <span class="catalog-item__price">332
+                    <span class="catalog-item__price--val">p.</span>
+                </span>
                 <button class="button button-white catalog-item__price_button">Заказать</button>
             </div>
             <div class="catalog-item">
@@ -207,22 +255,16 @@
                     <button class="catalog-item__icon"><img class="catalog-item__icon-image" src="img/heart-o.svg" alt=""></button>
                     <button class="catalog-item__icon"><img class="catalog-item__icon-image" src="img/addit.svg" alt=""></button>
                 </div>
-                <div class="catalog-image"></div>
-                <a class="catalog-item__name" href="#">Шпагат Macrametr 4&nbsp;мм, 100&nbsp;нитей</a>
-                <p class="catalog-item__price">34 p.</p>
-                <button class="button button-white catalog-item__price_button">Заказать</button>
-            </div>
-            <div class="catalog-item">
-                <div class="catalog-item__icons">
-                    <button class="catalog-item__icon"><img class="catalog-item__icon-image" src="img/heart-o.svg" alt=""></button>
-                    <button class="catalog-item__icon"><img class="catalog-item__icon-image" src="img/addit.svg" alt=""></button>
+                <div class="catalog-image">
+                    <img class="catalog-image--img" src="img/image14.png" alt="Шпагат джутовый Сибшнур 500 м">
                 </div>
-                <div class="catalog-image"></div>
-                <a class="catalog-item__name" href="#">Шпагат Macrametr 4&nbsp;мм, 100&nbsp;нитей</a>
-                <p class="catalog-item__price">34 p.</p>
+                <h4 class="catalog-item__name"><a class="catalog-item__link" href="#">Шпагат Macrametr 4&nbsp;мм, 100&nbsp;нитей</a></h4>
+                <span class="catalog-item__price">332
+                    <span class="catalog-item__price--val">p.</span>
+                </span>
                 <button class="button button-white catalog-item__price_button">Заказать</button>
             </div>
-        </div>
+        </section>
 
 
     </main>
