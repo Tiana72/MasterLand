@@ -1,4 +1,6 @@
 .left-column {
     min-width: 227px;
     background-color: var(--lightaccentcolor);
+    float: left;
+    margin-right: 30px;
 }
