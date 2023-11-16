@@ -47,7 +47,13 @@
 /* Верхнее меню */
 .nav {
     padding-bottom: 10px;
-    border-bottom: var(--lighttextcolor) 1px solid;
+    /* border-bottom: var(--lighttextcolor) 1px solid; */
+}
+.nav-bottom-line {
+    max-width: var(--width);
+    margin: 0 auto;
+    color: var(--lighttextcolor);
+    size: 1px;
 }
 /* .top-menu-mobile {
     display: none;
