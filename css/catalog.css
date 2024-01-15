@@ -25,11 +25,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--lightbackground);
+    background-color: var(--colorwhite);
+    color: red;
+    border: red solid 2px;
     border-radius: 50%;
     height: 40px;
     width: 40px;
-    inset: 10px;
+    inset: 5px;
     font-family: Spectral SC;
     font-size: 14px;
     font-weight: 600;
@@ -40,12 +42,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--darkaccentcolor);
+    background-color: red;
     border-radius: 50%;
     height: 40px;
     width: 40px;
-    top: 60px;
-    left: 10px;
+    inset: 5px;
     font-family: Spectral SC;
     font-size: 14px;
     font-weight: 600;
@@ -57,6 +58,25 @@
     align-items: center;
     margin: 10px;
 }
+.rating-items__container {
+    display: flex;
+    font-size: 14px;
+    line-height: 1.4;
+}
+.rating-items__star {
+    background-image: url(/img/gold.svg);
+    background-size: 16px 16px;
+    width: 16px;
+    height: 16px;
+}
+.rating-items__value {
+    margin-left: 4px;
+}
+.rating-items__feedbacks-num {
+    color: var(--lighttextcolor);
+    margin-left: 4px;
+}
+
 .catalog-image {
     display: flex;
     justify-content: center;
@@ -64,20 +84,30 @@
 }
 .catalog-image--img {
     margin: 0 auto;
-    max-height: 100%;
+    min-width: 100%;
+    aspect-ratio: 1;
     object-fit: cover;
 }
 .catalog-item__name {
     display: block;
     font-weight: 400;
     font-size: 16px;
-    margin: 16px 10px;    
+    margin: 15px 10px;    
+}
+.catalog-item__link {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .catalog-item__link:hover {
     font-weight: 600;
 }
 .catalog-item__price {
     display: block;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 18px;
     font-weight: 600;
 }
 .catalog-item__price--old {
